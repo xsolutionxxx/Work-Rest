@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talaievych Nazar">
+    <title>Tomatooooo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,600,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <h1 class="title">
+                GopStop
+            </h1>
+            <h2 class="subtitle">
+                Stopwatch for recording work and rest time.
+            </h2>
+            <p class="text">
+                To start working with the application, you need to select a mode and press the start button. As soon as
+                you switch to another mode turn off the chosen already mode (by clicking on the selected mode again) or
+                press the reset button, you will receive a notification about how much time you spent in the selected
+                mode. Enjoy your use!
+                <br>
+                <br>
+                The work was done by the coolest programmer, albeit a self-proclaimed one - Nazar Talayevich, specially
+                commissioned by <a href="mailto:oleh.pashkevych@ukd.edu.ua">oleh.pashkevych@ukd.edu.ua</a>
+            </p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="stopwatch">
+                <div class="stopwatch__wrapper">
+                    <div class="modes">
+                        <button id="work-mode">Work</button>
+                        <button id="break-mode">Break</button>
+                    </div>
+                    <div id="display">
+                        00:00:00
+                    </div>
+                    <div class="buttons">
+                        <button id="startBtn" class="button-active">Start</button>
+                        <button id="pauseBtn" class="button-active">Pause</button>
+                        <button id="resetBtn" class="button-active">Reset</button>
+                    </div>
+                </div>
+                <aside class="aside">
+                    <div class="aside__wrapper">
+                        <div class="sum-box">
+                            <div class="sum-work">-----</div>
+                            <div class="sum-break">-----</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <p class="copy">GopStop. Talaievych and his corporation reserve all rights &#169;</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

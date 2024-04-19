@@ -1,0 +1,233 @@
+/* Загальні стилі */
+
+.body {
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    margin: 60px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Активний стиль для сторінки в режимі Static */
+.body-active-static {
+    background-color: rgb(174, 54, 54);
+}
+
+/* Активний стиль для сторінки в режимі Active */
+.body-active {
+    background-color: rgb(49, 67, 203);
+}
+
+/* Стилі для контейнера та бічної панелі */
+.stopwatch,
+.aside {
+    background-color: rgba(225, 225, 225, 0.15);
+    height: 100%;
+    border-radius: 40px 0 0 40px;
+}
+
+.stopwatch {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    gap: 60px;
+}
+
+.stopwatch__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    width: 50%;
+    height: 400px;
+}
+
+/* Стилі для бічної панелі */
+.aside {
+    padding: 60px;
+    width: 50%;
+    height: 325px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.aside__wrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стилі для режимів */
+.modes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.mode-active-static {
+    background-color: white;
+    color: rgb(174, 54, 54);
+}
+
+.mode-active {
+    background-color: white;
+    color: rgb(49, 67, 203);
+}
+
+/* Стилі для відображення часу */
+#display {
+    display: flex;
+    align-items: center;
+    width: 533px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    letter-spacing: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Стилі для кнопок */
+button {
+    width: 180px;
+    height: 60px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buttons {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.buttons button {
+    width: 170px;
+    height: 70px;
+    box-shadow: 0 10px rgb(141, 141, 141);
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: rgb(59, 59, 59);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.button-active {
+    margin-top: 7px;
+    width: 170px;
+    height: 70px;
+    box-shadow: 0 3px rgb(141, 141, 141) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+/* Стилі для блоків в бічній панелі */
+.sum-box {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    width: 500px;
+    border-radius: 6px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: rgb(59, 59, 59);
+}
+
+/* Стилі для повідомлень */
+.message {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+/* Стилізація тексту */
+
+.title {
+    margin: 0 0 25px;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.subtitle {
+    margin: 30px;
+    font-size: 26px;
+}
+
+.text {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+.text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copy {
+    text-align: center;
+    color: rgb(182, 182, 182);
+}
